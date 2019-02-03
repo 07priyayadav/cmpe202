@@ -2,8 +2,8 @@
 public class GumballMachine
 {
 
-    private int num_gumballs;
-    private boolean has_quarter;
+    public int num_gumballs;  //modified to public to get acess in child class
+    private boolean has_quarter;  
 
     public GumballMachine( int size )
     {
