@@ -22,8 +22,15 @@ public class GumballMachine {
 		} 
 	}
  
-	public void insertQuarter() {
-		state.insertQuarter();
+	public void insertQuarter(int coin) {
+		
+	    if (coin == 25) {
+            state.insertQuarter();
+            }
+            else{
+    
+                System.out.println("Please inert a Quarter");
+            }
 	}
  
 	public void ejectQuarter() {
@@ -75,16 +82,16 @@ public class GumballMachine {
         return soldState;
     }
  
-	public String toString() {
-		StringBuffer result = new StringBuffer();
-		result.append("\nMighty Gumball, Inc.");
-		result.append("\nJava-enabled Standing Gumball Model #2004");
-		result.append("\nInventory: " + count + " gumball");
-		if (count != 1) {
-			result.append("s");
-		}
-		result.append("\n");
-		result.append("Machine is " + state + "\n");
-		return result.toString();
-	}
+    public String toString() {
+    	StringBuffer result = new StringBuffer();
+    	result.append("\nMighty Gumball, Inc.");
+    	result.append("\nJava-enabled Standing Gumball Model #2004");
+    	result.append("\nInventory: " + count + " gumball");
+    	if (count != 1) {
+    		result.append("s");
+    	}
+    	result.append("\n");
+    	result.append("Machine is " + state + "\n");
+    	return result.toString();
+    }
 }
