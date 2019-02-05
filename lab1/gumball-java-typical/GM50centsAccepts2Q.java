@@ -10,19 +10,16 @@ public class GM50centsAccepts2Q extends GumballMachine {
 
     public void insertQuarter(int coin)
     {
-        if ( coin == 25 )
-        {
+        if (coin == 25){
             this.numbOfQuarters += 1;
         }
     }
 
     public void turnCrank()
     {
-        if ( this.numbOfQuarters == 2 )
-        {
+        if (this.numbOfQuarters == 2){
             //System.out.println("Calling child method with 2 quarters");
-            if ( this.num_gumballs > 0 )
-            {
+            if ( this.num_gumballs > 0 ){
                 this.num_gumballs-- ;
                 this.numbOfQuarters = 0 ;
                 System.out.println( "Thanks for your 50 cents.  Gumball Ejected!" ) ;
