@@ -8,30 +8,44 @@ public class GM50centsAccepts2Q extends GumballMachine {
         //System.out.println("Called the child constructor");
     }
 
-    public void insertQuarter(int coin) {
+    public void insertCoin(int coin) {
+        
         if (coin ==25){
             this.numbOfQuarters ++;
-            //System.out.println("numbOfQuarters"+numbOfQuarters);
+            //System.out.println("numbOfCoins"+numbOfCoins);
 
             if(this.numbOfQuarters==2)
             {
                 //System.out.println("Called the child insert method");
-                this.numbOfQuarters=0;
-                state.insertQuarter();
+                state.insertCoin();
                 
             }
             else{
-                System.out.println("Please insert another Quarter");
+                System.out.println("Please insert another Quarter.");
             }
 
+        }
+
+    }
+    
+    public void turnCrank() {
+        
+        if(this.numbOfQuarters==2){
+            
+            this.numbOfQuarters=0;
+            state.turnCrank();
+            state.dispense();
+        }
+        else{
+            System.out.println("You turned, but there are no suffient Quarters.");
         }
 
     }
 
     public String toString() {
         StringBuffer result = new StringBuffer();
-        result.append("\nMighty Gumball, Inc.");
-        result.append("\nJava-enabled Standing Gumball Model #2005");
+        result.append("\nThis is a two Quarter Gumball Machine, Inc.");
+        result.append("\nJava-enabled Standing Gumball Model #2006");
         result.append("\nInventory: " + count + " gumball");
         if (count != 1) {
             result.append("s");

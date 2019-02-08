@@ -3,7 +3,8 @@ public class GM50centsAccepts2Q extends GumballMachine {
     private int numbOfQuarters;
 
     public GM50centsAccepts2Q(int size) {
-        super(size);
+        
+        this.num_gumballs = size;
         this.numbOfQuarters=0;
         //System.out.println("Calling child constructor");
     }
@@ -31,7 +32,7 @@ public class GM50centsAccepts2Q extends GumballMachine {
         }
         else
         {
-            System.out.println( "Please insert a quarter to pay the cost of 50 cents" ) ;
+            System.out.println( "You turned, but you need to insert Quarter to pay cost 50 cents." ) ;
         }
     }
 

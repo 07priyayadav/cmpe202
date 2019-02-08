@@ -3,7 +3,8 @@ public class GMAcceptsAllCoinsTo50Cents extends GumballMachine{
     private int tot_cost;
 
     public GMAcceptsAllCoinsTo50Cents(int size) {
-        super(size);
+        
+        this.num_gumballs = size;
         this.tot_cost=0;
         //System.out.println("Calling child constructor");
     }
@@ -30,7 +31,7 @@ public class GMAcceptsAllCoinsTo50Cents extends GumballMachine{
             }
         }
         else{
-            System.out.println( "Please insert a coin to pay the cost of 50 cents" ) ;
+            System.out.println( "You turned! You have paid "+this.tot_cost +", but you need to pay cost 50 cents." ) ;
         }
     }
 }
