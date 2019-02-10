@@ -1,6 +1,6 @@
 
 
-public class GumballMachine {
+public abstract class GumballMachine {
  
     State soldOutState;
     State noCoinState;
