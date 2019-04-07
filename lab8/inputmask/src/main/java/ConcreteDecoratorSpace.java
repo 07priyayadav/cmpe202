@@ -19,7 +19,7 @@ public class ConcreteDecoratorSpace extends Decorator {
             else
                 out += CardNum.charAt(i);
         }
-        return "["+ out + "]";
+        return "["+ out + "]" + "  ";
     }
 
     @Override
