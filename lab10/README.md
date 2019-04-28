@@ -1,7 +1,7 @@
 # Lab 10:AspectJ & Feature IDE
 
 ### Lab1 : 
-####Implementation of a way to support instantiating Gumball Machines that can support 3 models as below
+#### Implementation of a way to support instantiating Gumball Machines that can support 3 models as below
 1. Cost 25 cents - Accepts only Quaters.
 2. Cost 50 cents - Accepts two Quaters.
 3. Cost 50 cents - Accepts all coins.
