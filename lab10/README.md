@@ -21,7 +21,7 @@ Below screenshots can demonstrates AspectJ and Feature IDE model config changes 
 
 1. Crank Model: Cost 25, accepts One Quater.
 
-![Crank Model](https://github.com/07priyayadav/cmpe202/lab10/output/CrankModelOneQTRCost25.jpeg)
+![Crank Model](https://github.com/07priyayadav/cmpe202/blob/master/lab10/output/CrankModelOneQTRCost25.jpeg)
 
 2. Crank Model: Cost 50, accepts two Quater.
 
